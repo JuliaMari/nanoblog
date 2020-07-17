@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é você?</title>
+    
+</head>
+<body>
+    <form action="#" th:action="@{/pessoa}" th:object="${pessoa}" method="post">
+        <p>Idade: <input type="text" th:field="*{idade}" /></p>
+        <p>Nome: <input type="text" th:field="*{nome}" /></p>
+        <p><input type="submit" value="Enviar" /></p> 
+    </form>
+    <a href="/pessoa"><button>Limpar</button></a></button>
+    <br>
+    <br>
+    <a href="/"><button>Página Inicial</button></a>
+</body>
+</html>
